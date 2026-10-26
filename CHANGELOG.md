@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.2.1
+
+- The rule "Make the person who acts the subject" now lists "answer to". A tool that "answers to `/rewrite`" passed the check because the old verb list did not name it.
+- The rule against verbs turned into nouns now covers verbs used as nouns with no added ending, such as "a tell", "an ask", and "the reveal". The skill now says "pattern" or "sign of AI writing" instead of "tell".
+- "Make the person who acts the subject" now gives a test: if the subject cannot think, speak, or choose, name who does. Its verb list is now a set of examples, and it adds "override".
+- Edited the prose in `SKILL.md` to follow its own rules. Instructions now name the writer or you as the subject, use "final version" instead of "rewrite" as a noun, and drop "sighting", "survivors", and "auto-curl". Watch lists and Before and After examples are unchanged.
+- #11 keeps a passive only when the actor is unknown or irrelevant. Putting the topic first no longer justifies one. The "Make the person who acts the subject" example no longer uses the passive "A comment is pinned to its sentence", and the README example now matches.
+
 ## 3.2.0
 
 Merged the `rewrite-natural` skill, Steven Pinker's *The Sense of Style*, and Clark, Martin, and Mahowald (2026) into this fork. There are no new patterns, so the total stays at 26.
