@@ -1,8 +1,12 @@
 # Changelog
 
+## 3.3.0
+
+- Added "Text for code and agents" under How to work. It applies Plain Language rules to code comments, prompts, inline documentation, and error, info, and status messages. The rules match the Writing style section of `AGENTS.md`.
+
 ## 3.2.2
 
-- The final step no longer turns "And the best part?" into "Best of all". Agents copied that stock phrase. The step now says to state the emphasized fact plainly at the end of its sentence. Its example turns "And the best part? It's free on every plan." into "It's free on every plan."
+- The final step now says to state the emphasized fact plainly at the end of its sentence.
 - The validator no longer checks for pattern tables in the README, which no longer has them.
 
 ## 3.2.1
