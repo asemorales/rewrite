@@ -13,7 +13,7 @@ Rewrite AI-generated text using Sutton and Pinker's rules for clear writing. For
 > Shared drafts are out today. For months our own team passed around files named final_v7.docx, so we built a way for two people to edit the same doc at once, with each person's changes showing up live for the other. Comments stay pinned to the sentence they're about, even when the text around them changes. It's free on every plan.
 
 **After, with opinionated writing principles (Rewrite):**
-> Shared drafts are finally here! For months, our own team was drowning in files named final_v7.docx, and we knew there had to be a better way. Now you and a coworker can edit the same doc and watch each other's changes appear live. You attach a comment to a sentence, and it moves with that sentence when you edit the text around it. Best of all, shared drafts are available today on every plan, completely free.
+> Shared drafts are finally here! For months, our own team was drowning in files named final_v7.docx, and we knew there had to be a better way. Now you and a coworker can edit the same doc and watch each other's changes appear live. You attach a comment to a sentence, and it moves with that sentence when you edit the text around it. Shared drafts are available today on every plan, completely free.
 
 ## Installation
 

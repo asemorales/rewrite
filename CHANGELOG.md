@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.2
+
+- The final step no longer turns "And the best part?" into "Best of all". Agents copied that stock phrase. The step now says to state the emphasized fact plainly at the end of its sentence. Its example turns "And the best part? It's free on every plan." into "It's free on every plan."
+- The validator no longer checks for pattern tables in the README, which no longer has them.
+
 ## 3.2.1
 
 - The rule "Make the person who acts the subject" now lists "answer to". A tool that "answers to `/rewrite`" passed the check because the old verb list did not name it.
