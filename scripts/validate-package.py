@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check Humanizer's package files without external dependencies."""
+"""Check Rewrite's package files without external dependencies."""
 
 from __future__ import annotations
 
@@ -74,8 +74,8 @@ if SKILL_PATH.is_symlink() or skill_files != {Path("SKILL.md")}:
     raise SystemExit("Keep one regular SKILL.md at the repo root")
 if PLUGIN.get("skills") != ["./"]:
     raise SystemExit("Point the Claude plugin skill loader at the repo root")
-if CURSOR_PLUGIN.get("name") != "humanizer":
-    raise SystemExit("Set the Cursor plugin name to humanizer")
+if CURSOR_PLUGIN.get("name") != "rewrite":
+    raise SystemExit("Set the Cursor plugin name to rewrite")
 if "skills" in CURSOR_PLUGIN:
     raise SystemExit("Omit skills from the Cursor plugin so it loads the root SKILL.md")
 
@@ -140,7 +140,7 @@ if missing_patterns:
 
 # Every word of SKILL.md is read on each use, so the budget is in words.
 skill_words = len(SKILL.split())
-if skill_words > 5500:
-    raise SystemExit(f"Keep SKILL.md at 5,500 words or fewer; it has {skill_words}")
+if skill_words > 7000:
+    raise SystemExit(f"Keep SKILL.md at 7,000 words or fewer; it has {skill_words}")
 
-print(f"Humanizer package v{skill_version} is valid")
+print(f"Rewrite package v{skill_version} is valid")

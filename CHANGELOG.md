@@ -1,5 +1,28 @@
 # Changelog
 
+## 3.2.0
+
+Merged the `rewrite-natural` skill, Steven Pinker's *The Sense of Style*, and Clark, Martin, and Mahowald (2026) into this fork. There are no new patterns, so the total stays at 26.
+
+- Added a House style section. It puts low reading cost ahead of brevity, allows semicolons only as list separators, splits comma splices, uses commas instead of middle dots (·), asks for one claim per paragraph in its first or last sentence, and prefers strong verbs that match the evidence.
+- Added Pinker's clarity rules: write about the subject itself; cut metaconcepts, intensifiers, and scare quotes; mind the curse of knowledge; put given before new; name sentence connections; and use one term per thing. #11 keeps the passive when it puts the topic first.
+- Added reading-cost rules from "Why is AI-generated language so hard to understand?": spread information evenly; spend words that carry structure; avoid long-distance dependencies, object relative clauses, stacked nouns, rare word sequences, and inanimate subjects; avoid nominalizations and denominal verbs outside everyday speech; and use technical words only in their precise meanings.
+- Removed semicolons from the skill's own prose, except in list separators and Before examples.
+- Raised the validator's word cap from 5,500 to 7,000.
+- Shortened `SKILL.md` from about 6,100 to 4,600 words. Tightened prose, dropped second examples from several patterns, and kept every rule and all 26 patterns.
+
+- #1 now covers mirrored clauses joined by a comma ("The API is stable, the docs are not."), and a kept contrast must be split or joined with a conjunction.
+- #3 cuts a sentence that would sound just as true with its claim reversed.
+- #4 watches for throat-clearing openers such as "In today's fast-paced world" and "As we all know".
+- #8 keeps en dashes in number ranges and paired terms.
+- #9 watches for "it is important to note that" and "it's worth mentioning that".
+- #15 watches for "..., making it the fastest option" tails.
+- The check step searches for `, not`, `, but`, and dash characters.
+- The Voice section keeps the writer's enthusiasm, and the final step keeps the feeling a cut tell carried ("And the best part?" → "Best of all").
+- The actor rule covers inanimate subjects with verbs that describe behavior, such as "comments stay anchored".
+- A new clarity rule prefers "you" or a named role to a count or a total ("two people… both see every change").
+- #16 watches for feature-copy phrases such as "every change", "at once", and "as it happens", and states each property once.
+
 ## 3.1.0
 
 - Added pattern #26 and section F for replies that re-explain context the reader already has (#269). It acts on replies, not standalone writing. 26 patterns total.
