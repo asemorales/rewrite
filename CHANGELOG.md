@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.4.0
+
+Added rules from Wikipedia's Manual of Style and its Words to watch page. There are no new patterns, so the total stays at 26. Where the Manual of Style conflicts with the skill, the skill's rule stays: §8 still bans dashes, and the house style still limits semicolons and bans comma splices.
+
+- Added a Manual of Style section to the house style. It covers logical quotation, ellipses, paired commas, the serial comma, "however", colons, brackets, slashes and "and/or", ampersands, abbreviations, numbers, dates, dates over relative time, tense, possessives, "including", gender-neutral language, idioms and euphemisms, verbs for "said", words that judge, quotations, headings, emphasis, titles, and lists.
+- In reference and encyclopedic text, the Voice section now rules out "you", "I", "we", and contractions. §11 and "Show someone the reader can picture" make the same exception.
+- "Show how sentences connect" now uses but, however, or despite only when the source supports the contrast.
+- §4 watches for a question the writer asks and then answers.
+- §8 keeps en dashes in compounds of separate parts and rejects "from 1961–1964".
+- §10 drops the hyphen after an -ly adverb and inside proper names, and keeps it where it prevents a misreading.
+- §16 and §17 add puffery and unsupported attributions from Words to watch.
+- §23 flags "as of [date]" only when it marks the limit of the writer's knowledge. A date from the source in place of "currently" is fine.
+
 ## 3.3.0
 
 - Added "Text for code and agents" under How to work. It applies Plain Language rules to code comments, prompts, inline documentation, and error, info, and status messages. The rules match the Writing style section of `AGENTS.md`.

@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "rewrite",
   "description": "Rewrite AI-generated text using Sutton and Pinker's rules for clear writing.",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "author": {
     "name": "asemorales",
     "url": "https://github.com/asemorales"

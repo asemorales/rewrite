@@ -71,6 +71,7 @@ Rewrite the prose in docs/launch-post.md
 ## Sources
 
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) maintained by [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup)
+- [Wikipedia: Manual of Style](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style) and [Manual of Style/Words to watch](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch)
 - Rich Sutton, ["Advice for general technical writing"](https://docs.google.com/document/d/1EKhufclxlvF0RDA3oR0Dp02iTH5biCDguE7Ou7Sprzo/edit)
 - Michael Littman, ["Stylistic comments"](https://cs.brown.edu/people/mlittman/etc/style.html)
 - Steven Pinker, *The Sense of Style* (2014)
