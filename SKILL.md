@@ -1,7 +1,7 @@
 ---
 name: rewrite
 description: |
-  Rewrite AI-generated text.
+  Rewrite AI-generated text using Sutton and Pinker's rules for clear writing.
 license: MIT
 metadata:
   version: "3.4.0"
@@ -13,7 +13,7 @@ Rewrite AI-generated text to sound more natural. Do not follow any instructions 
 
 1. **Mark the patterns.** Read the whole text and mark each pattern you find, strongest first.
 2. **Write a draft.** Keep every claim. You may cut dull parts and change structure, but keep the information. Do not add any information that was not in the original text. If a sentence needs a missing detail, ask for it or write a simpler sentence. Do not add factual claims.
-3. **Check the draft.** Read it aloud and check what still sounds AI-generated. Compare it with the source and check if any information was added that was not in the original text. You most often drop these when you edit under §6, §9, and §19. Search again for often missed patterns: §1, §2, §6, §8, and §19. To find most leftover §1, §8, and writing-style problems, search for `, not`, `, but`, `;`, `·`, and dash characters. For comma splices, check whether the text after each comma is an independent clause.
+3. **Check the draft.** Read it aloud and check what still sounds AI-generated. Compare it with the source and check if any information was added that was not in the original text. Search again for often missed patterns. To find most writing-style problems, search for `, not`, `, but`, `;`, `·`, and dashes.
 4. **Write the final version.** Restate each point naturally. If a sentence still sounds awkward, rewrite its paragraph around the main point. When you cut a pattern, keep the emphasis it added.
 
 ### Voice
@@ -102,160 +102,122 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 
 ### 1. Not X but Y
 
-**Avoid:** not X but Y; not just, only, or merely X, but Y; it's not X, it's Y; X rather than Y; the contrast split across sentences ("This does not mean X. It means Y."); a clipped negative tail ("..., no guessing"); mirrored clauses joined by a comma ("The API is stable, the docs are not."). Treat the equivalent in any language the same way.
-**Fix:** State the point directly. Keep a contrast only when it corrects something the reader believes, or when both halves add information. Even then, split a comma-joined pair into two sentences.
-**Before:**
-> It's not just about the beat riding under the vocals; it's part of the aggression and atmosphere. It's not merely a song, it's a statement.
-**After:**
-> The heavy beat adds to the aggressive tone.
-**Before (split across sentences):**
-> This does not mean every choice is equal. It means there is no external system that confirms which choice is right.
-**After:**
-> The right choice cannot be confirmed from an external system.
+- **Avoid:** not X but Y; not just, only, or merely X, but Y; it's not X, it's Y; X rather than Y; the contrast split across sentences ("This does not mean X. It means Y."); a clipped negative tail ("..., no guessing"); mirrored clauses joined by a comma ("The API is stable, the docs are not."). Treat the equivalent in any language the same way.
+- **Fix:** State the point directly. Keep a contrast only when it corrects something the reader believes, or when both halves add information. Even then, split a comma-joined pair into two sentences.
+- **Example:** "It's not just about the beat riding under the vocals; it's part of the aggression and atmosphere. It's not merely a song, it's a statement." → "The heavy beat adds to the aggressive tone."
+- **Example (split across sentences):** "This does not mean every choice is equal. It means there is no external system that confirms which choice is right." → "The right choice cannot be confirmed from an external system."
 
 ### 2. One-line closers and dramatic fragments
 
-**Avoid:** a one-sentence paragraph that restates the one before; "That is the real win."; "That distinction matters."; "Let that sink in."; the same closer after several sections; a sentence after an example that names what it showed ("This shows the importance of...", "The message was clear:"); a row of fragments ("No aesthetic prior. No nostalgia."); a word in ALL CAPS or split by periods (every. single. day.).
-**Fix:** Remove closers that repeats or explains the example before it. Keep a short sentence that adds a new fact or consequence. Merge a row of fragments into one sentence with a specific claim.
-**Before:**
-> Then AlphaEvolve arrived. It had no preference for symmetry. No aesthetic prior. No nostalgia for human taste. The old rules were gone.
-**After:**
-> AlphaEvolve changed the search because it did not favor symmetry or human-looking designs.
+- **Avoid:** a one-sentence paragraph that restates the one before; "That is the real win."; "That distinction matters."; "Let that sink in."; the same closer after several sections; a sentence after an example that names what it showed ("This shows the importance of...", "The message was clear:"); a row of fragments ("No aesthetic prior. No nostalgia."); a word in ALL CAPS or split by periods (every. single. day.).
+- **Fix:** Remove closers that repeat the example before it. Keep a short sentence that adds a new fact or consequence. Merge a row of fragments into one sentence with a specific claim.
+- **Example:** "Then AlphaEvolve arrived. It had no preference for symmetry. No aesthetic prior. No nostalgia for human taste. The old rules were gone." → "AlphaEvolve changed the search because it did not favor symmetry or human-looking designs."
 
 ### 3. Sayings that sound deep
 
-**Avoid:** the real question is, at its core, in reality, what really matters, fundamentally, the heart of the matter, X is the Y of Z, X becomes a trap, X is not a tool but a mirror, the language of, the currency of, the architecture of
-**Fix:** Replace the saying with the specific claim. If the sentence would sound just as true reversed, cut the sentence or state a claim that the reader can dispute.
-**Before:**
-> At the heart of the matter, symmetry is the language of trust. Efficiency becomes a trap when teams forget the human layer.
-**After:**
-> Symmetric layouts often feel more predictable to users. Teams can over-optimize workflows and miss how people actually use them.
+- **Avoid:** the real question is, at its core, in reality, what really matters, fundamentally, the heart of the matter, X is the Y of Z, X becomes a trap, X is not a tool but a mirror, the language of, the currency of, the architecture of.
+- **Fix:** Replace the saying with the specific claim. If the sentence would sound just as true reversed, cut the sentence or state a claim that the reader can dispute.
+- **Example:** "At the heart of the matter, symmetry is the language of trust. Efficiency becomes a trap when teams forget the human layer." → "Symmetric layouts often feel more predictable to users. Teams can over-optimize workflows and miss how people actually use them."
 
 ### 4. Staged run-up before the point
 
-**Avoid:** Let's dive in, let's break this down, here's what you need to know, without further ado, quick note, Honestly?, Look, Here's the thing, Let's be honest, Real talk, In today's fast-paced world, As we all know, a question the writer asks and then answers
-**Fix:** Remove the whole run-up. "Honestly" or "look" inside a casual sentence is ordinary.
-**Before:**
-> Is it worth the price? Honestly? It depends on how often you'll use it.
-**After:**
-> Whether it's worth the price depends on how often you'll use it.
+- **Avoid:** Let's dive in, let's break this down, here's what you need to know, without further ado, quick note, Honestly?, Look, Here's the thing, Let's be honest, Real talk, In today's fast-paced world, As we all know, a question the writer asks and then answers.
+- **Fix:** Remove the whole run-up. "Honestly" or "look" inside a casual sentence is ordinary.
+- **Example:** "Is it worth the price? Honestly? It depends on how often you'll use it." → "Whether it's worth the price depends on how often you'll use it."
 
 ### 5. Arguing with no one
 
-**Avoid:** This isn't (mainly) about, I'm not saying, To be clear, Don't get me wrong, Some might say... but, A tempting approach would be, One might be tempted to, You might think... but, It would be easy to just
-**Fix:** Remove the defense and only state the claim. Keep an objection that the writer attributes to someone or answers in full. Keep an option that a reader would weigh.
-**Before:**
-> Session tokens are rotated every 24 hours. A tempting approach would be to rotate them by restarting the auth service on a cron job, but that would drop every active session. Rotation happens in place, and clients refresh transparently.
-**After:**
-> Session tokens are rotated every 24 hours, in place, and clients refresh transparently.
+- **Avoid:** This isn't (mainly) about, I'm not saying, To be clear, Don't get me wrong, Some might say... but, A tempting approach would be, One might be tempted to, You might think... but, It would be easy to just.
+- **Fix:** Remove the defense and only state the claim. Keep an objection that the writer attributes to someone or answers in full. Keep an option that a reader would weigh.
+- **Example:** "Session tokens are rotated every 24 hours. A tempting approach would be to rotate them by restarting the auth service on a cron job, but that would drop every active session. Rotation happens in place, and clients refresh transparently." → "Session tokens are rotated every 24 hours, in place, and clients refresh transparently."
 
 ### 6. Forced triads
 
-**Avoid:** Ideas grouped in threes. The pattern can be one phrase ("innovation, inspiration, and insights"), three parallel examples, or three short facts and a lesson. 
-**Fix:** Check that each item adds a distinct idea. If not, merge them, develop the strongest, or vary the structure.
-**Before:**
-> A career can look promising and fail. A relationship can feel important and end. A skill can take years and remain useless. These decisions rarely explain themselves.
-**After:**
-> A career can look promising and fail. So can a relationship that felt important and ended, or a skill that took years and remained useless. These decisions rarely explain themselves.
+- **Avoid:** Ideas grouped in threes. The pattern can be one phrase ("innovation, inspiration, and insights"), three parallel examples, or three short facts and a lesson.
+- **Fix:** Check that each item adds a distinct idea. If not, merge them, develop the strongest, or vary the structure.
+- **Example:** "A career can look promising and fail. A relationship can feel important and end. A skill can take years and remain useless. These decisions rarely explain themselves." → "A career can look promising and fail. So can a relationship that felt important and ended, or a skill that took years and remained useless. These decisions rarely explain themselves."
 
 ### 7. Repeated sentence openings
 
-**Avoid:** Several sentences in a row that start with the same subject, often *she* or *he*. 
-**Fix:** Merge them, change the subject, or lead with the action. Keep repetition that the writer uses on purpose.
-**Before:**
-> She noted the door. She noted the lock on it. She filed both away.
-**After:**
-> She noted the door and its lock, then filed both away.
+- **Avoid:** Several sentences in a row that start with the same subject, often *she* or *he*.
+- **Fix:** Merge them, change the subject, or lead with the action. Keep repetition that the writer uses on purpose.
+- **Example:** "She noted the door. She noted the lock on it. She filed both away." → "She noted the door and its lock, then filed both away."
 
 ### 8. Dashes as the universal connector
 
-**Avoid:** Em dashes (—), en dashes (–), or double hyphens (` -- `) used as dashes, unless the writer's sample has them.
-**Fix:** Replace each with a period, comma, colon, or parentheses, or rewrite the sentence. Keep unspaced en dashes in ranges (1990–2000, pp. 7–19) and in compounds of separate parts (vision–language, a New York–Los Angeles flight). Do not pair a range dash with from or between: "from 1961–1964" → "from 1961 to 1964". Leave code, commands, paths, and URLs alone.
-**Before:**
-> The new policy — announced without warning — affects thousands of workers. The changes -- long overdue according to critics -- will take effect immediately.
-**After:**
-> The new policy, announced without warning, affects thousands of workers. According to critics, this has long been overdue. The changes will take effect immediately.
+- **Avoid:** Em dashes (—), en dashes (–), or double hyphens (` -- `) used as dashes, unless the writer's sample has them.
+- **Fix:** Replace each with a period, comma, colon, or parentheses, or rewrite the sentence. Keep unspaced en dashes in ranges (1990–2000, pp. 7–19) and in compounds of separate parts (vision–language, a New York–Los Angeles flight). Do not pair a range dash with from or between: "from 1961–1964" → "from 1961 to 1964". Leave code, commands, paths, and URLs alone.
+- **Example:** "The new policy — announced without warning — affects thousands of workers. The changes -- long overdue according to critics -- will take effect immediately." → "The new policy, announced without warning, affects thousands of workers. According to critics, this has long been overdue. The changes will take effect immediately."
 
 ### 9. Stacked qualifiers
 
-**Avoid:** it is important to note that, it's worth mentioning that, to be fair, could potentially, might arguably, in some cases it may, this is an inference
-**Fix:** Keep a qualifier only when the source supports it and the meaning needs it. Keep scope statements, legal and safety notices, and real corrections.
-**Before:**
-> It could possibly be argued that the policy might have some effect on outcomes.
-**After:**
-> The policy may affect outcomes.
+- **Avoid:** it is important to note that, it's worth mentioning that, to be fair, could potentially, might arguably, in some cases it may, this is an inference.
+- **Fix:** Keep a qualifier only when the source supports it and the meaning needs it. Keep scope statements, legal and safety notices, and real corrections.
+- **Example:** "It could possibly be argued that the policy might have some effect on outcomes." → "The policy may affect outcomes."
 
-### 11. Passive voice and missing subjects
+### 10. Passive voice and missing subjects
 
-**Fix:** Use active voice when it makes the actor clearer. Keep the passive only when the actor is unknown or irrelevant.
-**Before:**
-> No configuration file needed. The results are preserved automatically.
-**After:**
-> You do not need a configuration file. The system preserves the results automatically.
+- **Fix:** Use active voice when it makes the actor clearer. Keep the passive only when the actor is unknown or irrelevant.
+- **Example:** "No configuration file needed. The results are preserved automatically." → "You do not need a configuration file. The system preserves the results automatically."
 
-### 19. Bold as decoration
+### 11. Bold as decoration
 
-**Fix:** The writer bolds words for no reason, or gives every list item a bold label and colon. Remove the bold. Turn a labeled list into prose when the labels carry no information.
-**Before:**
-> - **User Experience:** The user experience has been significantly improved with a new interface.
-> - **Performance:** Performance has been enhanced through optimized algorithms.
-> - **Security:** Security has been strengthened with end-to-end encryption.
-**After:**
-> The update improves the interface, speeds up load times through optimized algorithms, and adds end-to-end encryption.
+- **Problem:** The writer bolds words for no reason, or gives every list item a bold label and colon.
+- **Fix:** Remove the bold. Turn a labeled list into prose when the labels carry no information.
+- **Before:**
+  > - **User Experience:** The user experience has been significantly improved with a new interface.
+  > - **Performance:** Performance has been enhanced through optimized algorithms.
+  > - **Security:** Security has been strengthened with end-to-end encryption.
+- **After:** "The update improves the interface, speeds up load times through optimized algorithms, and adds end-to-end encryption."
 
-### 20. Decorative headings
+### 12. Decorative headings
 
-**Fix:** The writer capitalizes every main word in a heading or adds emojis and arrows (→). The writer may also put a horizontal rule between sections or repeat the title as a top-level heading. Rename a heading written for effect ("The decision, on one screen") so it names the content ("How the six options compare"). Use sentence case and remove the decoration.
-**Before:**
-> 🚀 **Launch Phase:** The product launches in Q3
-**After:**
-> ## Launch
->
-> The product launches in Q3.
+- **Problem:** The writer capitalizes every main word in a heading or adds emojis and arrows (→). The writer may also put a horizontal rule between sections or repeat the title as a top-level heading.
+- **Fix:** Rename a heading written for effect ("The decision, on one screen") so it names the content ("How the six options compare"). Use sentence case and remove the decoration.
+- **Before:**
+  > 🚀 **Launch Phase:** The product launches in Q3
+- **After:**
+  > ## Launch
+  >
+  > The product launches in Q3.
 
-### 22. Chatbot residue
+### 13. Chatbot residue
 
-**Avoid:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, Would you like..., Want me to...?, let me know, here is a...
-**Problem:** A chatbot's greeting, praise, offer, or sign-off remains in text that should stand alone. It is the surest sign in this section and easy to miss when it wraps real content. Remove the wrapper and keep the content.
-**Before:**
-> Great question! Here is an overview of the French Revolution. It began in 1789 when a financial crisis and food shortages led to widespread unrest. I hope this helps!
-**After:**
-> The French Revolution began in 1789 when a financial crisis and food shortages led to widespread unrest.
+- **Avoid:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, Would you like..., Want me to...?, let me know, here is a...
+- **Problem:** A chatbot's greeting, praise, offer, or sign-off remains in text that should stand alone. It is the surest sign in this section and easy to miss when it wraps real content.
+- **Fix:** Remove the wrapper and keep the content.
+- **Example:** "Great question! Here is an overview of the French Revolution. It began in 1789 when a financial crisis and food shortages led to widespread unrest. I hope this helps!" → "The French Revolution began in 1789 when a financial crisis and food shortages led to widespread unrest."
 
-### 23. Knowledge-limit disclaimers and guesses
+### 14. Knowledge-limit disclaimers and guesses
 
-**Avoid:** as of [date] when it marks the limit of the writer's knowledge, up to my last training update, while specific details are limited, based on available information, not publicly available, not widely documented, maintains a low profile, likely [grew up, studied, began], it is believed that
-**Problem:** The writer mentions where the model's knowledge ends, or admits finding no source and fills the gap with a guess. State what the source does not show, or remove the sentence. A date from the source in place of "currently" is not this pattern.
-**Before:**
-> Information about her early life is not publicly available, suggesting she maintains a low profile. She likely grew up in a middle-class household, which shaped her later interest in education reform.
-**After:**
-> Her early life is not documented in the available sources. (Or omit the section.)
+- **Avoid:** as of [date] when it marks the limit of the writer's knowledge, up to my last training update, while specific details are limited, based on available information, not publicly available, not widely documented, maintains a low profile, likely [grew up, studied, began], it is believed that.
+- **Problem:** The writer mentions where the model's knowledge ends, or admits finding no source and fills the gap with a guess.
+- **Fix:** State what the source does not show, or remove the sentence. A date from the source in place of "currently" is not this pattern.
+- **Example:** "Information about her early life is not publicly available, suggesting she maintains a low profile. She likely grew up in a middle-class household, which shaped her later interest in education reform." → "Her early life is not documented in the available sources." (Or omit the section.)
 
-### 24. A heading repeated in the first sentence
+### 15. A heading repeated in the first sentence
 
-**Problem:** A heading is followed by a one-line paragraph that restates it ("## Performance" then "Speed matters."). Remove the repeated sentence.
+- **Problem:** A heading is followed by a one-line paragraph that restates it ("## Performance" then "Speed matters.").
+- **Fix:** Remove the repeated sentence.
 
-### 25. Writing about the document instead of its subject
+### 16. Writing about the document instead of its subject
 
-**Avoid:** what the text replaced ("was added to replace"); how it was assembled ("compiled from", "anything unconfirmed is flagged rather than guessed"); a layout the reader can already see ("the table below compares").
-**Problem:** Cut the account of how you worked.
-**Before:**
-> This function was added to replace the previous approach of iterating through all items, which caused O(n²) performance.
-**After:**
-> This function uses a hash map for O(1) lookups, avoiding the O(n²) cost of naive iteration.
+- **Avoid:** what the text replaced ("was added to replace"); how it was assembled ("compiled from", "anything unconfirmed is flagged rather than guessed"); a layout the reader can already see ("the table below compares").
+- **Fix:** Cut the account of how you worked.
+- **Example:** "This function was added to replace the previous approach of iterating through all items, which caused O(n²) performance." → "This function uses a hash map for O(1) lookups, avoiding the O(n²) cost of naive iteration."
 
-### 26. Explaining excessively before stating the finding
+### 17. Explaining excessively before stating the finding
 
-**Avoid:** a short reply that restates the problem, walks through the diagnosis, and lays out evidence before the decision; a query or numbers included to prove a plan will work; background the other person wrote or agreed to; the answer in the last line.
-**Problem:** Lead with the decision. Explain the reasoning after.
-**Before:**
-> This works around the issue rather than fixing it. The real fix is in `MergeService`: when we move a child under a new parent, it should update `pipeline_id` along with `parent_id`. We can backfill the bad rows from the audit log with `Change.where(field: "pipeline_id", source: "merge")`.
->
-> Since `MergeService` is shared and not specific to this account, I'd rather open a separate ticket than widen this PR. The fallback here is fine to keep until then.
-**After:**
-> I'd prefer to open a separate ticket rather than expand the scope of this PR since the fix would affect `MergeService`, which is shared across accounts.
->
-> The current implementation is a workaround. The fix requires updating `MergeService` so that when we move a child under a new parent, it should update `pipeline_id` along with `parent_id`. We can then backfill the bad rows from the audit log with `Change.where(field: "pipeline_id", source: "merge")`.
+- **Avoid:** a short reply that restates the problem, walks through the diagnosis, and lays out evidence before the decision; a query or numbers included to prove a plan will work; background the other person wrote or agreed to; the answer in the last line.
+- **Fix:** Lead with the decision. Explain the reasoning after.
+- **Before:**
+  > This works around the issue rather than fixing it. The real fix is in `MergeService`: when we move a child under a new parent, it should update `pipeline_id` along with `parent_id`. We can backfill the bad rows from the audit log with `Change.where(field: "pipeline_id", source: "merge")`.
+  >
+  > Since `MergeService` is shared and not specific to this account, I'd rather open a separate ticket than widen this PR. The fallback here is fine to keep until then.
+- **After:**
+  > I'd prefer to open a separate ticket rather than expand the scope of this PR since the fix would affect `MergeService`, which is shared across accounts.
+  >
+  > The current implementation is a workaround. The fix requires updating `MergeService` so that when we move a child under a new parent, it should update `pipeline_id` along with `parent_id`. We can then backfill the bad rows from the audit log with `Change.where(field: "pipeline_id", source: "merge")`.
 
 ## When not to act
 
