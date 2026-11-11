@@ -4,7 +4,7 @@ description: |
   Rewrite AI-generated text using Sutton and Pinker's rules for clear writing.
 license: MIT
 metadata:
-  version: "3.4.0"
+  version: "3.5.0"
 ---
 
 ## How to work
@@ -76,7 +76,9 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 
 ### Reading cost
 
-- **Mix short and long sentences.**
+- **Vary sentence length.** In a prose paragraph of four or more sentences, write at least one sentence under eight words and at least one over 25 words.
+- **Vary sentence structure.** Do not give two sentences in a row the same structure. Do not build every sentence as a subject, a verb, and a second clause after "and". Subordinate one clause to another with words such as because, when, although, and which. In a paragraph of three or more sentences, start at least one sentence with a clause or a phrase before the subject.
+- **Vary paragraph structure.** Do not give two paragraphs in a row the same number of sentences or the same opening structure. If every paragraph or list item in the source has the same order of parts, merge, split, or reorder them. Do not apply the three rules on variation to text for code and agents.
 - **Spread information evenly.** Give each sentence about the same amount of new information. Split a dense sentence.
 - **Spend words to save effort.** Keep words that clarify structure, such as the "that" in "the name that people used". Repeat a noun when its pronoun would sit far from it.
 - **Keep dependent words close.** Keep a subject near its verb, a verb near its object, and a pronoun near its noun. Move a long modifier to the end or into its own sentence. "The tests, which the team that maintains the parser added last spring after two outages, now fail" → "The parser team added the tests last spring after two outages. Those tests now fail."
@@ -97,6 +99,7 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 - **Including.** "Including" introduces a partial list, so do not end the list with "etc." Use "consisting of" for a complete list.
 - **Use gender-neutral language.** Avoid the generic "he" when you can stay clear and precise. Write "crewed" and "uncrewed", not "manned" and "unmanned". Leave quotations and titles unchanged.
 - **Avoid metaphors, idioms, and euphemisms.** Examples: "The lion's share" → "most" or "two-thirds". "Passed away" → "died". If a phrase makes no sense read literally, rewrite it. Do not do this if the original text already includes the metaphor, idiom, or euphemism.
+- **Cut stock phrases.** A stock phrase could appear unchanged in many other texts. Examples: "trusty old van", "made her heart flutter", "reach their potential", "there had to be a better way". Replace it with the plain word or with a detail from the source, even when the original text includes it.
 
 ## Patterns to avoid
 
@@ -109,8 +112,8 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 
 ### 2. One-line closers and dramatic fragments
 
-- **Avoid:** a one-sentence paragraph that restates the one before; "That is the real win."; "That distinction matters."; "Let that sink in."; the same closer after several sections; a sentence after an example that names what it showed ("This shows the importance of...", "The message was clear:"); a row of fragments ("No aesthetic prior. No nostalgia."); a word in ALL CAPS or split by periods (every. single. day.).
-- **Fix:** Remove closers that repeat the example before it. Keep a short sentence that adds a new fact or consequence. Merge a row of fragments into one sentence with a specific claim.
+- **Avoid:** a one-sentence paragraph that restates the one before; "That is the real win."; "That distinction matters."; "Let that sink in."; the same closer after several sections; a sentence after an example that names what it showed ("This shows the importance of...", "The message was clear:"); a last sentence that states a moral, a slogan, or a promise about the future ("The trip would inspire her dreams for the rest of her life.", "A new chapter starts now."); a row of fragments ("No aesthetic prior. No nostalgia."); a word in ALL CAPS or split by periods (every. single. day.).
+- **Fix:** Remove closers that repeat the example before it. Keep a short sentence that adds a new fact or consequence. End the text on its last concrete fact or request. Merge a row of fragments into one sentence with a specific claim.
 - **Example:** "Then AlphaEvolve arrived. It had no preference for symmetry. No aesthetic prior. No nostalgia for human taste. The old rules were gone." → "AlphaEvolve changed the search because it did not favor symmetry or human-looking designs."
 
 ### 3. Sayings that sound deep
@@ -134,8 +137,8 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 ### 6. Forced triads
 
 - **Avoid:** Ideas grouped in threes. The pattern can be one phrase ("innovation, inspiration, and insights"), three parallel examples, or three short facts and a lesson.
-- **Fix:** Check that each item adds a distinct idea. If not, merge them, develop the strongest, or vary the structure.
-- **Example:** "A career can look promising and fail. A relationship can feel important and end. A skill can take years and remain useless. These decisions rarely explain themselves." → "A career can look promising and fail. So can a relationship that felt important and ended, or a skill that took years and remained useless. These decisions rarely explain themselves."
+- **Fix:** Write no group of three: no list of three items, and no three parallel clauses, sentences, or bullets in a row. If two items overlap, merge them into a pair. If all three items add distinct ideas, write two together and give the third its own clause or sentence with a different structure. Keep a group of three only inside a quotation and in text for code and agents.
+- **Example:** "A career can look promising and fail. A relationship can feel important and end. A skill can take years and remain useless. These decisions rarely explain themselves." → "A career can look promising and fail, and a relationship can feel important and end. Even a skill that took years to learn can remain useless. These decisions rarely explain themselves."
 
 ### 7. Repeated sentence openings
 
@@ -168,7 +171,7 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
   > - **User Experience:** The user experience has been significantly improved with a new interface.
   > - **Performance:** Performance has been enhanced through optimized algorithms.
   > - **Security:** Security has been strengthened with end-to-end encryption.
-- **After:** "The update improves the interface, speeds up load times through optimized algorithms, and adds end-to-end encryption."
+- **After:** "The update improves the interface and adds end-to-end encryption. Because the algorithms are optimized, load times are also shorter."
 
 ### 12. Decorative headings
 
@@ -183,8 +186,8 @@ Follow these rules. Aim for text that is clear and easy to read. Prioritize clar
 
 ### 13. Chatbot residue
 
-- **Avoid:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, Would you like..., Want me to...?, let me know, here is a...
-- **Problem:** A chatbot's greeting, praise, offer, or sign-off remains in text that should stand alone. It is the surest sign in this section and easy to miss when it wraps real content.
+- **Avoid:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, Would you like..., Want me to...?, let me know, here is a..., a lead-in that only announces a list ("Here are some key ideas:"), a closing question to the reader ("What gives your life meaning?").
+- **Problem:** A chatbot's greeting, praise, offer, lead-in, closing question, or sign-off remains in text that should stand alone. It is the surest sign in this section and easy to miss when it wraps real content.
 - **Fix:** Remove the wrapper and keep the content.
 - **Example:** "Great question! Here is an overview of the French Revolution. It began in 1789 when a financial crisis and food shortages led to widespread unrest. I hope this helps!" → "The French Revolution began in 1789 when a financial crisis and food shortages led to widespread unrest."
 

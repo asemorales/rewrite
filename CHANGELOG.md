@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.5.0
+
+- Added three rules on variation in prose: sentence length, sentence structure, and paragraph structure.
+- Added a rule to cut stock phrases, even when the original text includes them.
+- §2 now lists a last sentence that states a moral/slogan.
+- §6 now allows no group of three outside quotations and text for code and agents.
+- §13 now lists a lead-in that only announces a list and a closing question to the reader.
+
 ## 3.4.0
 
 Added rules from Wikipedia's Manual of Style and its Words to watch page.
